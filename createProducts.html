@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>shopping Cart | Create Products</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, JavaScript, CSS, eCommerce, shopping">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/freamwork.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-purple ptb-10z pos-fix t-zero w-full zindx-100">
+        <div class="container w-egthy m-auto ">
+            <div class="header-content flxbtween-alcntr ">
+                <a href="index.html" class="brand fs-32 c-white ltr-spc-1-7 upper">Shopping Cart</a>
+                <nav class="ds-flex">
+                    <ul class="ds-flex" id="links">
+                        <li class=""><a href="login.html" rel="noopener noreferrer" class="c-white ds-block p-5 mt-0 mb-0 mr-5 ml-5 ">Sign In</a></li>
+                        <li class=""><a href="register.html" rel="noopener noreferrer" class="c-white ds-block p-5 mt-0 mb-0 mr-5 ml-5 ">Sign Up</a></li>
+                    </ul>
+                    <ul id="userInfo" class="al-item-cntr">
+                        <li class="m"><a href="profile.html" id="user" class="c-white fs-18 ltr-spc-2 p-5 mt-0 mb-0 mr-5"> </a></li>
+                        <li class="m"><a href="myProducts.html" title="Products I Added" class="fa fa-plus-square fa-sm pointr ds-inblock mr-15 ml-15 c-white h-20 w-20 linhig-20 rad-6 p-auto"></a></li>
+                        <li class="m"><a href="favourites.html" title="Products I liked" class="fa fa-heart fa-sm pointr ds-inblock mr-15 ml-15 c-white h-20 w-20 linhig-20 rad-6 p-auto"></a></li>
+                        <li class="theCart pos-rel w-40 pointr">
+                            <i class="fa fa-shopping-cart c-white" title="Products In my Cart"></i>
+                            <span class="badge c-white h-20 w-20 bg-red pos-abs rad-half t-mn10 r-mn15 fs-10 linhig-20 txt-c ds-non"> </span>
+                            <div class="cart-content pos-abs w-150 bg-ligh t-50 l-mn40 p-10 fs-12 brdr-gray ds-non w-full">
+                                <div class="ds-block"></div>
+                                <a href="cartProducts.html"  class="p-5 mt-10 bg-green c-white txt-c ds-block">view cart</a>
+                            </div>
+                        </li>
+                        <li class="m"><a href="#" id="logout" class="c-white fs-18 ltr-spc-2 p-5 mt-0 mb-0 mr-5 ml-5">Logout </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="home ptb-40z mt-70 mb-70">
+        <div class="container w-egthy m-auto ">
+            <form id=new_form class="itemDetails ds-grid"></form>
+            <div class="pos-fix b-twnt r-ten hover-opacity">
+                <a href="createProducts.html" class="m">
+                    <i class="fa fa-plus-circle fa-4x c-purple" title="create products"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-purple h-150">
+        <div class="container w-egthy m-auto">
+            <div class="header-content txt-c p-30">
+                <a href="index.html" class="brand fs-32 c-white ltr-spc-1-7 upper">Shopping Cart</a>
+                <p class="c-white">All Right Reserved : 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cartMenu.js"></script>
+    <script src="js/newProduct.js"></script>
+</body>
+</html>
